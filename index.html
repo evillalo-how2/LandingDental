@@ -1,201 +1,165 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Clínica Dental CristAl</title>
-    <meta
-      name="description"
-      content="Clínica dental con atención profesional, expertos en operatoria, coronas, blanqueamiento y extracciones. Agenda tu cita para valoración."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <meta name="description"content="Clínica dental con atención profesional,expertos en operatoria, coronas, blanqueamiento y extracciones
+     Agenda tu cita para valoración"/>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <body>
-    <a class="skip_link" href="#contenido">Saltar al contenido</a>
-
-    <header class="site_header">
-      <div class="container header_inner">
-        <a class="brand" href="#" aria-label="Ir al inicio">
-          <span class="brand_mark" aria-hidden="true"></span>
-          <span class="brand_name">Clínica Dental CristAl</span>
-        </a>
+    <header class="site-header" >
+        <div class="container header_inner">
+            <a class="brand" href="#" aria-label="Ir al inicio">
+                <span class="brand_mark" aria-hidden="true"></span>
+                <span class="brand_name">Clínica Dental CristAl</span>
+            </a>
 
         <nav class="nav" aria-label="Navegación principal">
-          <a href="#servicios">Servicios</a>
-          <a href="#por_que">¿Por qué elegirnos?</a>
-          <a class="btn btn_sm" href="#cita">Agendar cita</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#por-que">¿Por qué elegirnos?</a>
+            <a class="btn-sm" href="#cita">Agendar cita</a>
         </nav>
-      </div>
+        </div>
     </header>
 
     <main id="contenido">
-      <section class="hero" aria-labelledby="hero_title">
-        <div class="container hero_grid">
-          <div class="hero_copy">
-            <p class="badge">Trato humano, atención clara y buenas prácticas</p>
+        <section class="hero" aria-label="hero-title">
+            <div class="container_hero_grid">
+                <div class="hero_copy">
+                    <p class="badge">Trato humano, atención clara y buenas prácticas</p>
+                    <h1 id="hero-title">Sonrié con confianza desde la primera cita</h1>
+                    <p class="lead">
+                        Diagnóstico honesto, procedimientos cuidadosos y con seguimiento.
+                        Te explicamos opciones y costos con claridad desde un inicio
+                    </p>
+                    <ul class="checks" aria-label="Beneficios principales">
+                        <li>Valoración y plan de tratamiento personalizado</li>
+                        <li>Confort, higiene y seguridad</li>
+                        <li>Atención inclusiva, sin juicios y comunicación clara</li>
+                    </ul>
 
-            <h1 id="hero_title">Sonríe con confianza desde la primera cita</h1>
+                    <div class="cta-row">
+                        <a class="btn"href="cita"></a>
+                        <a class="btn btn-ghost" href="#servicios"></a>
+                    </div> 
+                    <dl class="stats" aria-label="Indicadores de la clínica">
+                        <div class="stat">
+                            <dt>Horarios</dt>
+                            <dd>Lunes 9:00 AM-4:30PM -Sábado 9:00 AM - 2:00 PM</dd>
+                        </div>
+                        <div class="stat">
+                            <dt>Atención</dt>
+                            <dd>Con valoración</dd>
+                        </div>
+                        <div class="stat">
+                            <dt>Enfoque</dt>
+                            <dd>Preventivo</dd>
+                        </div>
+                    </dl>
+                </div>
+                <figure class="hero_card">
+                    <img src="assets/img/blanqueamiento.jpeg" alt="Equipo de blanqueamiento dental" loading="eager" decoding="async">
+                    <figcaption class="hero_caption">
+                        <strong>Tip:</strong>La prevención reduce costos a largo plazo.
+                        Agenda una valoración antes de que algo pequeño se convierta en un problema mayor.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <p class="lead">
-              Diagnóstico honesto, procedimientos cuidadosos y con seguimiento. Te explicamos
-              opciones y costos con claridad desde un inicio.
-            </p>
+        <section id="servicios" class="section" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section_head">
+                    <h2 id="servicios-title">Servicios principales</h2>
+                    <p>Procedimientos comunes con enfoque preventivo, priorizamos tu bienestar y tu salud a largo personalizado
+                        con procedimientos sencillos realizados a tiempo.
+                    </p>
+                </header>
 
-            <ul class="checks" aria-label="Beneficios principales">
-              <li>Valoración y plan de tratamiento personalizado</li>
-              <li>Confort, higiene y seguridad</li>
-              <li>Atención inclusiva, sin juicios y comunicación clara</li>
-            </ul>
+        <div class="grid grid--cards">
+            <article class="card_service">
+                <figure class="media">
+                    <img src="assets/img/operatoria.jpeg" alt="Instrumental de operatoria dental" loading="lazy" decoding="async"/>
+                </figure>
+                <div class="card_body">
+                    <h3>Operatoria</h3>
+                    <p>Restauraciones estéticas y funcionales para caries o fracturas.</p>
+                    <ul class="list">
+                        <li>Evaluación clínica</li>
+                        <li>Materiales estéticos</li>
+                        <li>Indicaciones de cuidado</li>
+                    </ul>
+                    <a class="link" href="#cita">Agendar Valoración</a>
+                </div>
+            </article>
 
-            <div class="cta_row">
-              <a class="btn" href="#cita">Agendar cita</a>
-              <a class="btn btn_ghost" href="#servicios">Ver servicios</a>
+            <article class="card_service">
+                <figure class="media">
+                    <img src="assets/img/coronas.jpeg" alt="Coronas dentales y material relacionado" loading="lazy" decoding="async">
+                </figure>
+                <div class="card_body">
+                    <h3>Coronas dentales</h3>
+                    <p>Rehabilitacion para recuperar estructura, forma y función del diente.</p>
+                    <ul class="list">
+                        <li>Planes personalizados según el de cada paciente</li>
+                        <li>Diferentes opciones de materiales a su disposición</li>
+                        <li>Seguimiento post-tratamiento</li>
+                    </ul>
+                    <a  class="link" href="#cita"></a>
+                </div>
+            </article>
+
+            <article class="card_service">
+                <figure class="media">
+                    <img src="assets/img/blanqueamiento.jpeg" alt="Equipo de blanqueamiento dental" loading="lazy" decoding="async">
+                </figure>
+                <div class="card_body">
+                    <h3>Blanqueamiento dental</h3>
+                    <p>Mejora de tono con protocolos seguros y recomendaciones personalizadas</p>
+                    <ul class="list">
+                        <li>Revisión previa</li>
+                        <li>Cuidados y hábitos</li>
+                        <li>Resultados graduales</li>
+                    </ul>
+                    <a class="link" href="#cita">Agendar Sesión</a>
+                </div>
+            </article>
+            <article class="card_service">
+                <figure class="media">
+                    <img src="assets/img/exodoncias.jpeg" alt="Pinza de extracción junto a un molar extraído" loading="lazy" decoding="async">
+                </figure>
+                <div class="card_body">
+                    <h3>Exodoncias</h3>
+                    <p>Extracción cuidadosa con indicaciones claras para una recuperación segura.</p>
+                    <ul class="list">
+                        <li>Evaluación del caso</li>
+                        <li>Control del dolor</li>
+                        <li>Cuidados postoperatorios</li>
+                    </ul>
+                    <a class="link" href="#cita">Consultar mi caso</a>
+                </div>
+            </article>
+        </div>
             </div>
 
-            <dl class="stats" aria-label="Indicadores de la clínica">
-              <div class="stat">
-                <dt>Horarios</dt>
-                <dd>Lunes 9:00 AM–4:30 PM · Sábado 9:00 AM–2:00 PM</dd>
-              </div>
-              <div class="stat">
-                <dt>Atención</dt>
-                <dd>Con valoración</dd>
-              </div>
-              <div class="stat">
-                <dt>Enfoque</dt>
-                <dd>Preventivo</dd>
-              </div>
-            </dl>
-          </div>
+        </section>
 
-          <figure class="hero_card">
-            <img
-              src="assets/img/blanqueamiento.jpeg"
-              alt="Equipo de blanqueamiento dental"
-              loading="eager"
-              decoding="async"
-            />
-            <figcaption class="hero_caption">
-              <strong>Tip:</strong> La prevención reduce costos a largo plazo. Agenda una valoración
-              antes de que algo pequeño se convierta en un problema mayor.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="servicios" class="section" aria-labelledby="servicios_title">
+        <section id="por-que" class="section section--muted" aria-labelledby="porque-title">
         <div class="container">
-          <header class="section_head">
-            <h2 id="servicios_title">Servicios principales</h2>
-            <p>
-              Procedimientos comunes con enfoque preventivo. Priorizamos tu bienestar y tu salud a
-              largo plazo con procedimientos sencillos realizados a tiempo.
+          <header class="section__head">
+            <h2 id="porque-title">Por qué elegirnos</h2>
+            <p>Una experiencia clínica pensada para mejorar su salud dental a largo plazo y reducir su dolor a corto plazo.
             </p>
           </header>
 
-          <div class="grid grid_cards">
-            <article class="card_service">
-              <figure class="media">
-                <img
-                  src="assets/img/operatoria.jpeg"
-                  alt="Instrumental de operatoria dental"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div class="card_body">
-                <h3>Operatoria</h3>
-                <p>Restauraciones estéticas y funcionales para caries o fracturas.</p>
-                <ul class="list">
-                  <li>Evaluación clínica</li>
-                  <li>Materiales estéticos</li>
-                  <li>Indicaciones de cuidado</li>
-                </ul>
-                <a class="link" href="#cita">Agendar valoración</a>
-              </div>
-            </article>
-
-            <article class="card_service">
-              <figure class="media">
-                <img
-                  src="assets/img/coronas.jpeg"
-                  alt="Coronas dentales y material relacionado"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div class="card_body">
-                <h3>Coronas dentales</h3>
-                <p>Rehabilitación para recuperar estructura, forma y función del diente.</p>
-                <ul class="list">
-                  <li>Planes personalizados según cada paciente</li>
-                  <li>Diferentes opciones de materiales</li>
-                  <li>Seguimiento post-tratamiento</li>
-                </ul>
-                <a class="link" href="#cita">Solicitar información</a>
-              </div>
-            </article>
-
-            <article class="card_service">
-              <figure class="media">
-                <img
-                  src="assets/img/blanqueamiento.jpeg"
-                  alt="Equipo de blanqueamiento dental"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div class="card_body">
-                <h3>Blanqueamiento dental</h3>
-                <p>Mejora de tono con protocolos seguros y recomendaciones personalizadas.</p>
-                <ul class="list">
-                  <li>Revisión previa</li>
-                  <li>Cuidados y hábitos</li>
-                  <li>Resultados graduales</li>
-                </ul>
-                <a class="link" href="#cita">Agendar sesión</a>
-              </div>
-            </article>
-
-            <article class="card_service">
-              <figure class="media">
-                <img
-                  src="assets/img/exodoncias.jpeg"
-                  alt="Pinza de extracción junto a un molar"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div class="card_body">
-                <h3>Exodoncias</h3>
-                <p>Extracción cuidadosa con indicaciones claras para una recuperación segura.</p>
-                <ul class="list">
-                  <li>Evaluación del caso</li>
-                  <li>Control del dolor</li>
-                  <li>Cuidados postoperatorios</li>
-                </ul>
-                <a class="link" href="#cita">Consultar mi caso</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="por_que" class="section section_muted" aria-labelledby="porque_title">
-        <div class="container">
-          <header class="section_head">
-            <h2 id="porque_title">Por qué elegirnos</h2>
-            <p>
-              Una experiencia clínica pensada para mejorar tu salud dental a largo plazo y reducir
-              molestias a corto plazo.
-            </p>
-          </header>
-
-          <div class="grid grid_features">
+          <div class="grid grid--features">
             <article class="card feature">
               <h3>Comunicación clara</h3>
-              <p>Explicamos el diagnóstico y tus opciones con ejemplos claros y lenguaje sencillo.</p>
+              <p>Explicamos el diagnóstico y sus opciones con ejemplos claros y lenguaje sencillo.</p>
             </article>
 
             <article class="card feature">
@@ -205,47 +169,52 @@
 
             <article class="card feature">
               <h3>Trato humano e inclusivo</h3>
-              <p>Atención respetuosa, sin juicios, y adaptada a tus necesidades.</p>
+              <p>Atención respetuosa, sin juicios, y adaptada a sus necesidades.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="testimonios" class="section" aria-labelledby="testimonios_title">
+       <section id="testimonios" class="section" aria-labelledby="testimonios-title">
         <div class="container">
-          <header class="section_head">
-            <h2 id="testimonios_title">Testimonios</h2>
-            <p>Lo que más valoran las personas: claridad, confianza y resultados.</p>
-          </header>
+            <header class="section__head">
+              <h2 class="section__head">Testimonios</h2>
+              <p>Lo que más valoran las personas: claridad, confianza y resultados</p>
+            </header>
 
-          <div class="grid grid_quotes">
+
+          <div class="grid grid--quotes">
+            <figure class="card quote">
+                <blockquote>
+                    "Me explicaron todo antes de iniciar. Salí tranquila y con un plan claro"
+                </blockquote>
+                <figcaption>Alicia</figcaption>
+            </figure>
+          </div> 
+          
+          <figure class="card quote">
+            <blockquote>
+                "Sin presiones, y muy profesionales, el trato fue excelente y se respetaron las citas agendadas"
+            </blockquote>
+            <figcaption>Armando</figcaption>
+          </figure>
+
             <figure class="card quote">
               <blockquote>
-                “Me explicaron todo antes de iniciar. Salí tranquila y con un plan claro.”
+                “Seguimiento y recomendaciones reales. Se nota la experiencia.”
               </blockquote>
-              <figcaption>Alicia</figcaption>
-            </figure>
-
-            <figure class="card quote">
-              <blockquote>
-                “Sin presiones y muy profesionales. El trato fue excelente y se respetaron las citas
-                agendadas.”
-              </blockquote>
-              <figcaption>Armando</figcaption>
-            </figure>
-
-            <figure class="card quote">
-              <blockquote>“Seguimiento y recomendaciones reales. Se nota la experiencia.”</blockquote>
               <figcaption>Francisco</figcaption>
             </figure>
-          </div>
         </div>
-      </section>
+    </div>
 
-      <section id="cita" class="section section_muted" aria-labelledby="cita_title">
+
+    </section>
+    
+    <section id="cita" class="section section--muted" aria-labelledby="cita-title">
         <div class="container">
-          <header class="section_head">
-            <h2 id="cita_title">Agenda tu cita</h2>
+          <header class="section__head">
+            <h2 id="cita-title">Agenda tu cita</h2>
             <p>Cuéntanos tu motivo de consulta. Te respondemos con disponibilidad.</p>
           </header>
 
@@ -253,7 +222,7 @@
             <fieldset>
               <legend>Datos de contacto</legend>
 
-              <div class="form_grid">
+              <div class="form__grid">
                 <div class="field">
                   <label for="name">Nombre</label>
                   <input
@@ -288,62 +257,45 @@
                     placeholder="correo@ejemplo.com"
                   />
                 </div>
+            
+        <div class="field">
+                <label for="service">Servicio</label>
+                <select id="service" name="service" required>
+                <option value="">Selecciona una opción</option>
+                <option value="valoracion">Valoración</option>
+                <option value="operatoria">Operatoria</option>
+                <option value="coronas">Coronas</option>
+                <option value="blanqueamiento">Blanqueamiento</option>
+                <option value="exodoncias">Exodoncias</option>
+                </select>
+            </div>
 
-                <div class="field">
-                  <label for="service">Servicio</label>
-                  <select id="service" name="service" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="valoracion">Valoración</option>
-                    <option value="operatoria">Operatoria</option>
-                    <option value="coronas">Coronas</option>
-                    <option value="blanqueamiento">Blanqueamiento</option>
-                    <option value="exodoncias">Exodoncias</option>
-                  </select>
-                </div>
+            <div class="field field--full">
+                <label for="message">Cuéntanos que pasa</label>
+                <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Describe tu caso (dolor, sensibilidad, caries, etc.)"
+                ></textarea>
+            </div>
+            </div>        
 
-                <div class="field field_full">
-                  <label for="message">Cuéntanos qué pasa</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Describe tu caso (dolor, sensibilidad, caries, etc.)"
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="form_actions">
+        <div class="form__actions">
                 <button class="btn" type="submit">Enviar solicitud</button>
                 <p class="fineprint">
-                  <strong>
-                    Al hacer clic en “Enviar solicitud”, aceptas que te contactemos para confirmar
-                    disponibilidad.
-                  </strong>
+                  Al enviar, aceptas que te contactemos para confirmar disponibilidad.
                 </p>
               </div>
             </fieldset>
           </form>
         </div>
       </section>
+
+      
     </main>
 
-    <footer class="site_footer">
-      <div class="container footer_grid">
-        <div>
-          <p class="footer_brand">Clínica Dental CristAl</p>
-          <p class="footer_text">Atención profesional con enfoque preventivo.</p>
-        </div>
 
-        <nav class="footer_links" aria-label="Enlaces del pie de página">
-          <a href="#servicios">Servicios</a>
-          <a href="#cita">Agendar cita</a>
-          <a href="#">Privacidad</a>
-        </nav>
-      </div>
-
-      <div class="container footer_bottom">
-        <p>&copy; 2026 Clínica Dental CristAl. Todos los derechos reservados.</p>
-      </div>
-    </footer>
-  </body>
+    
+</body>
 </html>
