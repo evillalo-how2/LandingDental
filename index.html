@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" >
         <div class="container header_inner">
@@ -205,13 +205,97 @@
               </blockquote>
               <figcaption>Francisco</figcaption>
             </figure>
-
-
         </div>
-       </section>
+    </div>
 
 
+    </section>
+    
+    <section id="cita" class="section section--muted" aria-labelledby="cita-title">
+        <div class="container">
+          <header class="section__head">
+            <h2 id="cita-title">Agenda tu cita</h2>
+            <p>Cuéntanos tu motivo de consulta. Te respondemos con disponibilidad.</p>
+          </header>
+
+          <form class="card form" action="#" method="post" aria-label="Formulario para agendar cita">
+            <fieldset>
+              <legend>Datos de contacto</legend>
+
+              <div class="form__grid">
+                <div class="field">
+                  <label for="name">Nombre</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Tu nombre completo"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Teléfono</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="Ej. 55 1234 5678"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="email">Correo</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="correo@ejemplo.com"
+                  />
+                </div>
+            
+        <div class="field">
+                <label for="service">Servicio</label>
+                <select id="service" name="service" required>
+                <option value="">Selecciona una opción</option>
+                <option value="valoracion">Valoración</option>
+                <option value="operatoria">Operatoria</option>
+                <option value="coronas">Coronas</option>
+                <option value="blanqueamiento">Blanqueamiento</option>
+                <option value="exodoncias">Exodoncias</option>
+                </select>
+            </div>
+
+            <div class="field field--full">
+                <label for="message">Cuéntanos que pasa</label>
+                <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Describe tu caso (dolor, sensibilidad, caries, etc.)"
+                ></textarea>
+            </div>
+            </div>        
+
+        <div class="form__actions">
+                <button class="btn" type="submit">Enviar solicitud</button>
+                <p class="fineprint">
+                  Al enviar, aceptas que te contactemos para confirmar disponibilidad.
+                </p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      
     </main>
+
+
     
 </body>
 </html>
