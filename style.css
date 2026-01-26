@@ -9,8 +9,8 @@
   --color_text_light: #475569;
   --color_text_inverse: #ffffff;
 
-  --color_bg: #ffffff;
-  --color_bg_muted: #f8fafc;
+  --color_bg: var(--color_primary);
+  --color_bg_muted:var(--color_secondary);
 
 
   --color_border: rgba(15, 23, 42, 0.12);
@@ -38,18 +38,27 @@
   --font_mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
 
-
   --transition_base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition_fast: 140ms ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color_text: #e5e7eb;
-    --color_text_light: #9ca3af;
-    --color_bg: #0b1220;
-    --color_bg_muted: #0f172a;
-    --color_border: rgba(229, 231, 235, 0.12);
+    --color_primary: #7254c0;
+    --color_secondary: #546bc0;
+    --color_tertiary: #54a1c0;
+    --color_quaternary: #53bfa7;
+
+    --color_text: #e7edf6;
+    --color_text_light: #b7c3d6;
+    --color_bg: var(--color_primary);
+    --color_bg_muted:var(--color_secondary);
+    --color_border: rgba(231, 237, 246, 0.14);
+
+    --on_primary:#ffffff;
+    --on_secondary:#ffffff;
+    --on_tertiary:#0b1220;
+    --on_quaternary:#0b1220;
     --shadow_md: 0 10px 25px rgba(0, 0, 0, 0.35);
     --shadow_lg: 0 18px 40px rgba(0, 0, 0, 0.45);
   }
@@ -95,7 +104,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid rgba(84, 161, 192, 0.45);
+  outline: 3px solid var(--color_secondary);
   outline-offset: 3px;
   border-radius: var(--radius_sm);
 }
@@ -132,3 +141,24 @@ code {
   border-radius: var(--radius_sm);
   font-size: 0.875rem;
 }
+
+.container{
+    width:min(1200px,100% - 2rem);
+    margin: 0 auto;
+}
+
+.skip_link{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--color_tertiary);
+    color: var(--color_text_inverse);
+    padding: var(--space_xs) var(--space_md);
+    z-index: 2000;
+    border-radius: 0 0 var(--radius_md) 0;
+}
+
+.skip_link:focus{
+    top:0;
+}
+
