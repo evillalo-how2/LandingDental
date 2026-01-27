@@ -275,6 +275,7 @@ code {
 .btn {
   padding: 0.95rem 1.25rem;
   color: var(--color_text_inverse);
+  border:1px solid transparent;
   background: linear-gradient(135deg, var(--color_tertiary), var(--color_quaternary));
   transition: transform var(--transition_fast), box-shadow var(--transition_fast),
     filter var(--transition_fast);
@@ -302,8 +303,9 @@ code {
 }
 
 .btn_ghost {
-  background: transparent;
+  background: var(--color_secondary);
   color: var(--color_tertiary);
+  border:1px solid var(--color_primary) ;
   border-color: var(--color_primary);
   box-shadow: none;
   transition: color var(--transition_fast), background var(--transition_fast),
@@ -316,3 +318,4 @@ code {
   color: var(--color_text_inverse);
   border-color: var(--color_primary);
 }
+
