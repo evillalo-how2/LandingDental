@@ -51,7 +51,7 @@
 
     --color_text: #e7edf6;
     --color_text_light: #b7c3d6;
-    --color_bg: var(--color_primary);
+   --color_bg: var(--color_primary);
     --color_bg_muted:var(--color_secondary);
     --color_border: rgba(231, 237, 246, 0.14);
 
@@ -161,4 +161,68 @@ code {
 .skip_link:focus{
     top:0;
 }
+
+.site_header{
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color_border);
+    z-index: 1000;
+    animation: slide_down 0.5s ease-out;
+}
+
+@media(prefers-color-scheme: dark)
+{
+    .site_header{
+        background: rgba(11, 18, 32, 0.75)
+    }
+}
+
+@keyframes slide_down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space_md);
+  padding: var(--space_md) 0;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space_xs);
+  font-weight: 900;
+  color: var(--color_text);
+}
+
+.brand_mark {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius_md);
+  background: linear-gradient(135deg, var(--color_primary), var(--color_secondary));
+  box-shadow: var(--shadow_sm);
+  transform: rotate(-4deg);
+  transition: transform var(--transition_base), filter var(--transition_fast);
+}
+
+.brand:hover .brand_mark {
+  transform: rotate(4deg) scale(1.05);
+  filter: brightness(1.06);
+}
+
+.brand_name {
+  font-size: 1.05rem;
+}
+
+
 
