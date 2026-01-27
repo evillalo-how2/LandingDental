@@ -258,3 +258,61 @@ code {
   width: 100%;
 }
 
+
+
+.btn,
+.btn_sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius_full);
+  border: 1px solid transparent;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: var(--shadow_sm);
+}
+
+.btn {
+  padding: 0.95rem 1.25rem;
+  color: var(--color_text_inverse);
+  background: linear-gradient(135deg, var(--color_tertiary), var(--color_quaternary));
+  transition: transform var(--transition_fast), box-shadow var(--transition_fast),
+    filter var(--transition_fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow_md);
+  filter: brightness(1.03);
+}
+
+.btn_sm {
+  padding: 0.7rem 1rem;
+  font-size: 0.92rem;
+  color: var(--color_text_inverse);
+  background: linear-gradient(135deg, var(--color_primary_ui), var(--color_secondary_ui));
+  transition: transform var(--transition_fast), box-shadow var(--transition_fast),
+    filter var(--transition_fast);
+}
+
+.btn_sm:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow_md);
+  filter: brightness(1.03);
+}
+
+.btn_ghost {
+  background: transparent;
+  color: var(--color_tertiary);
+  border-color: var(--color_primary);
+  box-shadow: none;
+  transition: color var(--transition_fast), background var(--transition_fast),
+    transform var(--transition_fast), box-shadow var(--transition_fast),
+    border-color var(--transition_fast);
+}
+
+.btn_ghost:hover {
+  background: var(--color_primary);
+  color: var(--color_text_inverse);
+  border-color: var(--color_primary);
+}
