@@ -608,4 +608,51 @@ legend {
   color: var(--color_text_light);
   max-width: 70ch;
 }
+.site_footer {
+  padding: var(--space_2xl) 0 var(--space_lg);
+  border-top: 1px solid var(--color_border);
+  background: var(--color_bg);
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space_xl);
+  align-items: start;
+}
+
+.footer_brand {
+  font-weight: 950;
+  color: var(--color_text);
+  margin-bottom: 0.35rem;
+}
+
+.footer_text {
+  margin: 0;
+  color: var(--color_text_light);
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: flex-start;
+}
+
+.footer_links a {
+  color: var(--color_text);
+  font-weight: 700;
+}
+
+.footer_links a:hover {
+  color: var(--color_secondary);
+}
+
+.footer_bottom {
+  margin-top: var(--space_xl);
+  padding-top: var(--space_md);
+  border-top: 1px solid var(--color_border);
+  color: var(--color_text_light);
+}
+
 
