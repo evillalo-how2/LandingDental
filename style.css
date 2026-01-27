@@ -150,22 +150,6 @@ code {
     width:min(1200px,100% - 2rem);
     margin: 0 auto;
 }
-
-.skip_link{
-    position: absolute;
-    top: -100%;
-    left: 0;
-    background: var(--color_tertiary);
-    color: var(--color_text_inverse);
-    padding: var(--space_xs) var(--space_md);
-    z-index: 2000;
-    border-radius: 0 0 var(--radius_md) 0;
-}
-
-.skip_link:focus{
-    top:0;
-}
-
 .site_header{
     position: sticky;
     top: 0;
