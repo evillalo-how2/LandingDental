@@ -11,8 +11,9 @@
   --color_text_white:#ffffff;
  
   --color_bg:linear-gradient(105deg, var(--color_primary), var(--color_secondary));
-  --color_bg_muted:linear-gradient(135deg, var(--color_secondary,0.5), var(--color_primary,0.6));
-  --color_bg2:linear-gradient(105deg, var(--color_secondary), var(--color_tertiary));
+  --color_bg_muted:linear-gradient(135deg, var(--color_secondary), var(--color_primary));
+  --color_bg2:linear-gradient(105deg, var(--color_tertiary), var(--color_secondary));
+  --color_bg_reversed:linear-gradient(180deg,var(--color_quaternary), var(--color_primary));
 
 
 
@@ -168,9 +169,9 @@ code {
 .site_header{
     position: sticky;
     top: 0;
-    background-color: var(--color_bg)
+    background: var(--color_bg_reversed);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color_border);
+    border-bottom: 1px solid var(--color_secondary);
     z-index: 1000;
     animation: slide_down 0.3s ease-out;
 }
@@ -178,7 +179,7 @@ code {
 @media(prefers-color-scheme: dark)
 {
     .site_header{
-        background: var(--color_bg);
+        background: var(--color_bg_muted);
     }
 }
 
@@ -202,6 +203,7 @@ code {
 }
 .brand {
   display: inline-flex;
+  background: transparent;
   align-items: center;
   gap: var(--space_xs);
   font-weight: 900;
@@ -209,11 +211,11 @@ code {
 }
 
 .brand_mark {
-  width: 40px;
-  height: 40px;
+  width:100px;
+  height: 60px;
   border-radius: var(--radius_md);
-  background: transparent
-  box-shadow: var(--shadow_sm);
+  background: transparent;
+  box-shadow: none;
   transform: rotate(-4deg);
   transition: transform var(--transition_base), filter var(--transition_fast);
 }
