@@ -520,3 +520,23 @@ code {
   color: var(--color_quaternary);
 }
 
+.feature h3 {
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  margin: 0;
+}
+
+.quote blockquote {
+  color: var(--color_text);
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.quote figcaption {
+  margin-top: var(--space_sm);
+  color: var(--color_text_light);
+  font-weight: 700;
+}
+
