@@ -212,7 +212,7 @@ code {
   width: 40px;
   height: 40px;
   border-radius: var(--radius_md);
-  background: var(--color_bg);
+  background: transparent
   box-shadow: var(--shadow_sm);
   transform: rotate(-4deg);
   transition: transform var(--transition_base), filter var(--transition_fast);
