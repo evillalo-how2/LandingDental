@@ -13,8 +13,8 @@
   --color_bg:linear-gradient(105deg, var(--color_primary), var(--color_secondary));
   --color_bg_muted:linear-gradient(135deg, var(--color_secondary), var(--color_primary));
   --color_bg2:linear-gradient(105deg, var(--color_tertiary), var(--color_secondary));
-  --color_bg_reversed:linear-gradient(180deg,var(--color_quaternary), var(--color_primary));
-
+  --color_bg_reversed_vertical:linear-gradient(180deg,var(--color_quaternary), var(--color_primary));
+  --color_bg_reversed:linear-gradient(105deg,var(--color_quaternary), var(--color_tertiary));
 
 
   --color_border: rgba(15, 23, 42, 0.12);
@@ -53,16 +53,13 @@
     --color_tertiary: #54a1c0;
     --color_quaternary: #546bc0;
 
-    --color_text: black;
-    --color_text_light:#bfe6db;
-    --color_bg: var(--color_primary);
-    --color_bg_muted:var(--color_secondary);
+    --color_text: var(--color_text_white);
+    --color_text_light_:var(--color_text_white);
+    --color_bg: var(--color_bg_reversed);
+    --color_bg_muted:var(--color_bg2);
     --color_border: rgba(231, 237, 246, 0.14);
 
-    --on_primary:#ffffff;
-    --on_secondary:#ffffff;
-    --on_tertiary:#0b1220;
-    --on_quaternary:#0b1220;
+
     --shadow_md: 0 10px 25px rgba(0, 0, 0, 0.35);
     --shadow_lg: 0 18px 40px rgba(0, 0, 0, 0.45);
   }
@@ -153,7 +150,7 @@ code {
 .site_header{
     position: sticky;
     top: 0;
-    background: var(--color_bg_reversed);
+    background: var(--color_bg_reversed_vertical);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color_secondary);
     z-index: 1000;
@@ -296,7 +293,7 @@ code {
   color: var(--color_tertiary);
   border:none;
   box-shadow: none;
-  transition color var(--transition_fast), background var(--transition_fast),
+  transition: color var(--transition_fast), background var(--transition_fast),
     transform var(--transition_fast), box-shadow var(--transition_fast),
     border-color var(--transition_fast);
 }
