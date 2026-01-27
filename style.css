@@ -7,10 +7,12 @@
   
   --color_text: #0f172a;
   --color_text_light: #475569;
-  --color_text_inverse: #ffffff;
-
+  --color_text_inverse:#31215A ;
+  --color_text_white:#ffffff;
+ 
   --color_bg:linear-gradient(105deg, var(--color_primary), var(--color_secondary));
   --color_bg_muted:linear-gradient(135deg, var(--color_secondary,0.5), var(--color_primary,0.6));
+  --color_bg2:linear-gradient(105deg, var(--color_secondary), var(--color_tertiary));
 
 
 
@@ -131,7 +133,7 @@ h3 {
 
 p {
   margin-bottom: var(--space_md);
-  color: var(--color_text_light);
+  color: var(--color_text_inverse);
 }
 
 code {
@@ -275,7 +277,7 @@ code {
 
 .btn {
   padding: 0.95rem 1.25rem;
-  color: var(--color_text_inverse);
+  color: var(--color_text_white);
   border:1px solid transparent;
   background: linear-gradient(135deg, var(--color_tertiary), var(--color_quaternary));
   transition: transform var(--transition_fast), box-shadow var(--transition_fast),
@@ -291,7 +293,7 @@ code {
 .btn_sm {
   padding: 0.7rem 1rem;
   font-size: 0.92rem;
-  color: var(--color_text_inverse);
+  color: var(--color_text_white);
   background: linear-gradient(135deg, var(--color_tertiary), var(--color_quaternary));
   transition: transform var(--transition_fast), box-shadow var(--transition_fast),
     filter var(--transition_fast);
@@ -306,7 +308,7 @@ code {
 .btn_ghost {
   background:transparent;
   color: var(--color_tertiary);
-  border:1px solid var(--color_primary) ;
+  border:none
   border-color: var(--color_primary);
   box-shadow: none;
   transition: color var(--transition_fast), background var(--transition_fast),
@@ -319,10 +321,6 @@ code {
   color: var(--color_text_inverse);
   border-color: var(--color_primary);
 }
-
-
-
-
 
 .hero {
   padding: var(--space_3xl) 0;
@@ -353,6 +351,7 @@ code {
   }
 }
 
+
 .hero_grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -373,9 +372,9 @@ code {
   padding: 0.5rem 0.85rem;
   border-radius: var(--radius_full);
   background: var(--color_primary_ui);
-  border: 1px solid var(--color_primary);
+  border: 2px solid var(--color_tertiary);
   color: var(--color_text_inverse);
-  font-weight: 800;
+  font-weight: 650;
   margin-bottom: var(--space_md);
 }
 
@@ -445,7 +444,7 @@ code {
 .hero_caption {
   padding: var(--space_md);
   margin: 0;
-  color: var(--color_text_light);
+  color: var(--color_text_inverse);
 }
 
 .section {
@@ -485,6 +484,7 @@ code {
 .card,
 .card_service {
   background: var(--color_bg_muted);
+
   border: 1px solid var(--color_border);
   border-radius: var(--radius_lg);
   box-shadow: var(--shadow_sm);
