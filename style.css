@@ -318,6 +318,10 @@ code {
   border-color: var(--color_primary);
 }
 
+
+
+
+
 .hero {
   padding: var(--space_3xl) 0;
   position: relative;
@@ -438,7 +442,6 @@ code {
   color: var(--color_text_light);
 }
 
-/* Sections */
 .section {
   padding: var(--space_3xl) 0;
 }
@@ -452,4 +455,20 @@ code {
 .section_head {
   max-width: 72ch;
   margin-bottom: var(--space_xl);
+}
+.grid {
+  display: grid;
+  gap: var(--space_lg);
+}
+
+.grid_cards {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid_features {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid_quotes {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
