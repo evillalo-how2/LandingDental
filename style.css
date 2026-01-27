@@ -456,6 +456,7 @@ code {
   max-width: 72ch;
   margin-bottom: var(--space_xl);
 }
+
 .grid {
   display: grid;
   gap: var(--space_lg);
@@ -472,3 +473,50 @@ code {
 .grid_quotes {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
+
+.card,
+.card_service {
+  background: var(--color_bg);
+  border: 1px solid var(--color_border);
+  border-radius: var(--radius_lg);
+  box-shadow: var(--shadow_sm);
+}
+
+.card_service {
+  overflow: hidden;
+  transition: transform var(--transition_fast), box-shadow var(--transition_fast),
+    border-color var(--transition_fast);
+}
+
+.card_service:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow_md);
+  border-color: var(--color_primary);
+}
+
+.media img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card_body {
+  padding: var(--space_md);
+}
+
+.list {
+  margin: 0 0 var(--space_md);
+  padding-left: 1.1rem;
+  color: var(--color_text);
+}
+
+.link {
+  font-weight: 850;
+  color: var(--color_tertiary);
+}
+
+.link:hover {
+  color: var(--color_quaternary);
+}
+
