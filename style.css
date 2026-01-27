@@ -540,3 +540,72 @@ code {
   font-weight: 700;
 }
 
+.form {
+  padding: var(--space_lg);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 900;
+  margin-bottom: var(--space_md);
+  color: var(--color_text);
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space_md);
+}
+
+.field label {
+  display: block;
+  font-weight: 850;
+  margin-bottom: 0.4rem;
+  color: var(--color_text);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border-radius: var(--radius_md);
+  border: 1px solid var(--color_border);
+  background: var(--color_bg);
+  color: var(--color_text);
+  transition: border-color var(--transition_fast), box-shadow var(--transition_fast);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color_secondary);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field_full {
+  grid-column: 1 / -1;
+}
+
+.form_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space_md);
+  flex-wrap: wrap;
+  margin-top: var(--space_md);
+}
+
+.fineprint {
+  margin: 0;
+  color: var(--color_text_light);
+  max-width: 70ch;
+}
+
