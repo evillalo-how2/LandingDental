@@ -9,8 +9,9 @@
   --color_text_light: #475569;
   --color_text_inverse: #ffffff;
 
-  --color_bg:linear-gradient(135deg, var(--color_primary), var(--color_secondary));
-  --color_bg_muted:linear-gradient(135deg, var(--color_secondary,0.5), var(--color_primary));
+  --color_bg:linear-gradient(105deg, var(--color_primary), var(--color_secondary));
+  --color_bg_muted:linear-gradient(135deg, var(--color_secondary,0.5), var(--color_primary,0.6));
+
 
 
   --color_border: rgba(15, 23, 42, 0.12);
@@ -165,7 +166,7 @@ code {
 .site_header{
     position: sticky;
     top: 0;
-    background-color: linear-gradient(135deg, var(--color_sec), var(--color_secondary));
+    background-color: var(--color_bg)
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color_border);
     z-index: 1000;
@@ -175,7 +176,7 @@ code {
 @media(prefers-color-scheme: dark)
 {
     .site_header{
-        background: linear-gradient(135deg, var(--color_primary), var(--color_secondary));
+        background: var(--color_bg);
     }
 }
 
@@ -209,7 +210,7 @@ code {
   width: 40px;
   height: 40px;
   border-radius: var(--radius_md);
-  background: linear-gradient(135deg, var(--color_primary), var(--color_secondary));
+  background: var(--color_bg);
   box-shadow: var(--shadow_sm);
   transform: rotate(-4deg);
   transition: transform var(--transition_base), filter var(--transition_fast);
@@ -226,6 +227,7 @@ code {
 
 .nav {
   display: flex;
+  
   align-items: center;
   gap: var(--space_lg);
   flex-wrap: wrap;
@@ -246,7 +248,7 @@ code {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: var(--color_primary);
+  background: transparent;
   transition: width var(--transition_fast);
 }
 
@@ -290,7 +292,7 @@ code {
   padding: 0.7rem 1rem;
   font-size: 0.92rem;
   color: var(--color_text_inverse);
-  background: linear-gradient(135deg, var(--color_primary_ui), var(--color_secondary_ui));
+  background: linear-gradient(135deg, var(--color_tertiary), var(--color_quaternary));
   transition: transform var(--transition_fast), box-shadow var(--transition_fast),
     filter var(--transition_fast);
 }
@@ -326,7 +328,7 @@ code {
   padding: var(--space_3xl) 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--color_primary), var(--color_secondary));
+  background: transparent;
 }
 
 .hero::before {
@@ -379,6 +381,7 @@ code {
 
 .lead {
   font-size: 1.05rem;
+  color: var(--color_text);
 }
 
 .checks {
@@ -408,9 +411,10 @@ code {
 .stat {
   padding: var(--space_md);
   border-radius: var(--radius_md);
-  background: var(--color_text_inverse);
+  background: var(--color_bg_muted);
   border: 1px solid var(--color_border);
   box-shadow: var(--shadow_sm);
+  color: var(--color_text);
 }
 
 .stat dt {
@@ -419,7 +423,7 @@ code {
 }
 
 .stat dd {
-  color: var(--color_text_light);
+  color: var(--color_text);
   margin-top: 0.25rem;
 }
 
@@ -429,7 +433,7 @@ code {
   overflow: hidden;
   border: 1px solid var(--color_border);
   box-shadow: var(--shadow_lg);
-  background: var(--color_bg);
+  background: transparent;
 }
 
 .hero_card img {
@@ -445,7 +449,7 @@ code {
 }
 
 .section {
-  background: linear-gradient(135deg, var(--color_secondary,0.65), var(--color_primary,0.65));
+  background:transparent;
   padding: var(--space_3xl) 0;
 }
 
@@ -480,7 +484,7 @@ code {
 
 .card,
 .card_service {
-  background: var(--color_bg);
+  background: var(--color_bg_muted);
   border: 1px solid var(--color_border);
   border-radius: var(--radius_lg);
   box-shadow: var(--shadow_sm);
@@ -614,7 +618,7 @@ legend {
 .site_footer {
   padding: var(--space_2xl) 0 var(--space_lg);
   border-top: 1px solid var(--color_border);
-  background: var(--color_bg);
+  background: transparent;
 }
 
 .footer_grid {
