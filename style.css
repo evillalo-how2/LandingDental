@@ -297,7 +297,7 @@ code {
   border:none
   border-color: var(--color_primary);
   box-shadow: none;
-  transition: color var(--transition_fast), background var(--transition_fast),
+  transition color var(--transition_fast), background var(--transition_fast),
     transform var(--transition_fast), box-shadow var(--transition_fast),
     border-color var(--transition_fast);
 }
