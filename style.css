@@ -224,5 +224,37 @@ code {
   font-size: 1.05rem;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space_lg);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 
+.nav a:not(.btn):not(.btn_sm) {
+  position: relative;
+  color: var(--color_text);
+  font-weight: 650;
+  transition: color var(--transition_fast);
+}
+
+.nav a:not(.btn):not(.btn_sm)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--color_primary);
+  transition: width var(--transition_fast);
+}
+
+.nav a:not(.btn):not(.btn_sm):hover {
+  color: var(--color_secondary);
+}
+
+.nav a:not(.btn):not(.btn_sm):hover::after {
+  width: 100%;
+}
 
