@@ -88,6 +88,16 @@
     color: var(--color_placeholder);
 
   }
+  .field :select{
+    background:white;
+    color:var(--color_text);
+    border-color:white;
+  }
+  
+  .field select option{
+    background:var(--color_text_inverse);
+    color:var(--color_text_light) ;
+  }
 }
 
 @media (max-width: 980px) {
